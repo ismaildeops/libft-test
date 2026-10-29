@@ -16,7 +16,8 @@ int	ft_atoi(const char *str)
 	int			i;
 	int			sign;
 	long	result;
-
+	// if(str == NULL)
+	// 	return 0;
 	i = 0;
 	sign = 1;
 	result = 0;
@@ -38,4 +39,14 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	return ((int)(result * sign));
+}
+
+#include<stdlib.h>
+#include <stdio.h>
+int main()
+{
+	// atoi(NULL);
+	// printf("%d", atoi(NULL));
+	// ft_atoi(NULL);
+	// printf("%d", ft_atoi(NULL));
 }
